@@ -1,0 +1,8 @@
+Un array es un conjunto de valores que en javascript no necesitan ser tipados.
+Un array es un objeto que tiene propiedades que son tanto sus valores como
+los metodos. Con sintaxys de punto y crochete.
+Los arrays son de tipo mutable no fijos. Sus valores pueden cambiar
+en cualquier lugar del script. Cada valor tiene su indice y se le puede asignar una clave key
+con la que se podra acceder a el.
+Los arrays pueden contener valores de tipo numerico, strings o booleanos, y tambien
+comprenden diccionarios, bash, matrices, etc.
