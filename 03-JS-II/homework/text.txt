@@ -1,0 +1,13 @@
+El bucle for es una funcion que realiza
+ciertas tareas definidas, repetidas veces mientras
+se cumpla una condicion.
+Consta de una expresion inicial, una condicion, y
+una expresion de actualizacion, seguido por el bloque de tareas.
+El operador lógico && es un condicional estricto, el cual argumenta
+cumplirse tantas condiciones necesarias para igualar un true. El diagrama
+seria tanto 'a' como 'b' deben ser positivos para llegar a 'c'.
+El operador lógico || es un condicional de comparacion, el cual argumenta
+que debe cumplirse al menos una de las condiciones para igualar un true.
+El diagrama seria, para llegar a c necesito que a o b
+sea positivo.
+
