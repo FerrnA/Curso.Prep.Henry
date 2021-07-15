@@ -1,26 +1,25 @@
 const { array } = require("yargs");
 
 // No cambies los nombres de las funciones.
-import randomInteger;
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
-  return array[0]
+  return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
-  return array[array.length - 1]
+  return array[array.length - 1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.length
+  return array.length;
 }
 
 
@@ -29,9 +28,8 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  for(i of array){
-    i++
-  }
+  for(let i = 0;i<array.length;i++){
+    array[i] = array[i] + 1;}
   return array;
   //Array.from([[1, 2, 3],[4, 5, 6]], x => x + 1)
 }
@@ -62,7 +60,8 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  array.join(' ');
+  let x = palabras.join(' ');
+  return x;
 }
 
 
@@ -70,7 +69,8 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  if(array.includes(elemento)){return 'true'}{return 'false'};
+  //if(array.includes(elemento)===true){return true}{return false};
+  return (array.includes(elemento));
 }
 
 
@@ -78,7 +78,7 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
-  var x = arr.reduce(function (a, b) { return a + b; }, 0);
+  var x = numeros.reduce(function (a, b) { return a + b; }, 0);
   return x;
 }
 
@@ -103,7 +103,7 @@ function numeroMasGrande(numeros) {
   for (let i = 0; i < numeros.length; i++){
     if(numeros[i]>maximo){maximo = numeros[i]}
   }
-  return maximo
+  return maximo;
 }
 
 
@@ -111,7 +111,12 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-
+var x = 0;
+if(arguments.length>0){x = x + arguments[0]};
+  for(let i = 1;i<arguments.length;i++){
+   x = x*arguments[i];
+}
+return x;
 }
 
 
@@ -121,7 +126,7 @@ function cuentoElementos(arreglo){
   var x = 0;
   for(var i = 0;i<arreglo.length;i++){
   if(arreglo[i]>18){x += 1};}
-  return x
+  return x;
 }
 
 
@@ -130,7 +135,9 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+  if(numeroDeDia===1||numeroDeDia===7)
+  {return 'Es fin de semana'}
+  {return 'Es dia Laboral'};
 } 
 
 
@@ -138,7 +145,9 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  let num = n.toString();
+  if(num.charAt(0)==='9'){return true}
+  {return false};
 }
 
 
@@ -146,9 +155,10 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  var i = 0;
-  do{i++}while(arreglo[i] === arreglo[i-1]);
-  if(i===(arreglo.length-1)){return true}{return false};
+  for(let i = 0; i<(arreglo.length-1);i++){
+      if(arreglo[i]!==arreglo[i+1]){return false}
+      };
+      return true;
 } 
 
 
@@ -157,8 +167,13 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-let nuevoarray = array.slice('Enero','Marzo','Noviembre');
-if(!(array.includes('Enero','Marzo','Noviembre')){return 'No se encontraron los meses pedidos'}{return nuevoarray})
+let nuevoarray = [];
+for(let i = 0; i<array.length;i++){
+  if(array[i]==='Enero'||array[i]==='Noviembre'||array[i]==='Marzo'){
+    nuevoarray.push(array[i]);
+  }
+};
+if(nuevoarray.length<3){return 'No se encontraron los meses pedidos'}{return nuevoarray};
 }
 
 
@@ -184,15 +199,14 @@ function breakStatement(numero) {
   // Tu código:
   var array = [];
   for(let i = 0;i<10;i++){
+    let x = array.reduce(function (a, b) { return a + b; }, 0);
+    if(i!==0 && x===i){
+      return 'Se interrumpió la ejecución';
+      };
     numero += 2;
     array.push(numero);
-    let x = arr.reduce(function (a, b) { return a + b; }, 0)
-    if(x===i){
-      return 'Se interrumpió la ejecución';
-      }}
-  return array;
-  }
-}
+    };
+  return array;}
 
 
 function continueStatement(numero) {
@@ -204,13 +218,11 @@ function continueStatement(numero) {
   // Tu código:
   var array = [];
   for(let i = 0;i<10;i++){
+    if(i===5){continue}{};
     numero += 2;
-    if(i===5){continue};
     array.push(numero);
   }
-  return array;
-  }
-}
+  return array;}
 
 
 // No modificar nada debajo de esta línea
