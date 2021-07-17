@@ -1,0 +1,20 @@
+Los objetos son un array de datos con llave, los cuales pueden
+ser funciones (llamadas metodos), otros objetos (arrays, strings,
+numeros). Estos objetos tambien cuentan con sus metodos prototipeados
+no intimos de cada objeto, con los cuales se puede acceder a sus pro-
+piedades.
+Las propiedades de los objetos son los valores asociados a un objeto
+en javascript, a los cuales se puede acceder mediante su nombre
+clave. Se puede decir que un objeto es una coleccion de
+propiedades.
+Los metodos son propiedades de un objeto que tienen forma de funcion.
+Estos metodos son prototipeados o declarados en una de las llaves 
+del objeto.
+El bucle for.. in es un argumento que itera sobre cada propiedad de un
+objeto. Toma solo las propiedades con una llave tipo string e ignora
+los llaveados por symbols.
+La notacion por puntos o por corchetes son formas de acceder a las
+propiedades de un objeto. Para nombres de propiedades de objeto que
+comienzan con un numero, un guion o un espacio solo se puede acceder
+mediante la notacion por corchetes, ya que si es un numero p.e. js puede
+creer que el punto se trata de un decimal object.1erpropiedad() 
