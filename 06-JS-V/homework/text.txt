@@ -1,0 +1,14 @@
+Un constructor es una maqueta personalizada que facilita la creacion de objetos que
+comparten las mismas propiedades pero distintos valores.
+Dentro de este constructor o fuera de este modificandolo mediante 'prototype'
+se pueden definir funciones (llamadas metodos).
+Un objeto creado por un constructor puede funcionar tambien como un constructor de
+otro gracias a la cadena de prototype
+El prototype de un objecto esta formado por las funciones o propiedades del
+prototypo heredadas en su funcion constructora, y no en la instancia misma del 
+objeto, inherente de su __proto__. Esto se relaciona de igual manera por la
+cadena de prototipos. Se heredan prototipos de el constructor y del constructor
+del constructor.. etc. Las propiedades y metodos son encontrados recorriendo
+la cadena de prototipos. pero ademas retornara la funcion del objeto sobre el
+que se llama. Solamente se heredan las propiedades y metodos definidos en la 
+propiedad .prototype 

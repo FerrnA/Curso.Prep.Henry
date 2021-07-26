@@ -10,4 +10,8 @@ El operador lógico || es un condicional de comparacion, el cual argumenta
 que debe cumplirse al menos una de las condiciones para igualar un true.
 El diagrama seria, para llegar a c necesito que a o b
 sea positivo.
-
+El operador lógico ! es de oposicion (NOT), cambia veracidad a negatividad
+y viceversa. El diagrama es, la condicion de a hacia b se opone.
+El operador XOR es un condicional de comparacion, y argumenta que
+para igualar un true debe cumplirse una y solo una de las condiciones.
+El diagrama seria, para llegar a b, necesito que solo uno de x y ó z sea positivo. 
