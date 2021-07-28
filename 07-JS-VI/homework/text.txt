@@ -1,0 +1,5 @@
+Una funcion callback es una funcion llamada dentro de otra funcion o como un 
+argumento de esta.
+Metodos de array utilizan estas estructuras dentro de su sintaxis. Por ejemplo
+forEach que itera sobre cada elemento de un array, llama a una funcion dentro de su
+argumento.
