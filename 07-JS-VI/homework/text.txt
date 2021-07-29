@@ -1,5 +1,11 @@
 Una funcion callback es una funcion llamada dentro de otra funcion o como un 
-argumento de esta.
+argumento de esta. Podemos pasar funciones como variables dentro de funciones
 Metodos de array utilizan estas estructuras dentro de su sintaxis. Por ejemplo
 forEach que itera sobre cada elemento de un array, llama a una funcion dentro de su
 argumento.
+Las funciones callback se logran utilizar para lograr abstraccion del codigo o mejor
+lectura, como tabien mejor mantenimiento. Son tambien utilizadas como modulos cuando
+funcionales cuando se necesita repetir distintas veces una funcion identica.
+Tambien al construir una funcion con callbacks dentro de ella permite a la misma
+obetener mayor versatilidad al poder darle como el argumento o callback distintas
+funciones que utilicen los mismos argumentos
